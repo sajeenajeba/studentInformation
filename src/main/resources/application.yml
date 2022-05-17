@@ -1,0 +1,9 @@
+spring:
+  jackson:
+    default-property-inclusion: non_default
+    data:
+      mongodb:
+        uri: mongodb://localhost:27017/studentdb
+        auto-index-creation: true
+
+
