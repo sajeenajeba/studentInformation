@@ -19,7 +19,6 @@ public class StudService {
 
     @Autowired
     private StudRepository studRepository;
-
     public String createStudentDetails(StudEntity studEntity) {
 
             int roll;
