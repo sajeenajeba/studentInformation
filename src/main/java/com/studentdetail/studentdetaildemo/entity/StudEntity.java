@@ -22,5 +22,7 @@ public class StudEntity {
     private String division;
     @Field(name="gender")
     private String gender;
+    @Field(name ="rollNo")
+    private int rollNo;
 
 }

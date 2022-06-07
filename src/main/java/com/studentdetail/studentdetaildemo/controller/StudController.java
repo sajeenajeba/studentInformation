@@ -20,9 +20,9 @@ public class StudController {
         return ResponseEntity.status(HttpStatus.CREATED).body(studService.createStudentDetails(studEntity));
     }
 
-    @DeleteMapping(value = "/delete/{id}")
-    public ResponseEntity<String> deleteStudent(@PathVariable String name) {
-        return ResponseEntity.status(HttpStatus.OK).body(studService.deleteStudent(name));
+    @DeleteMapping(value = "/delete")
+    public ResponseEntity<String> deleteStudent(@RequestParam String id) {
+        return ResponseEntity.status(HttpStatus.OK).body(studService.deleteStudent(id));
     }
 
     @GetMapping(value = "/students")
